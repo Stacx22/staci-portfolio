@@ -1,26 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>About | Staci McDuffie</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <div class="brand">STACI <span>MCDUFFIE</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Data Science & Analytics</h2>
-    <p>I am a data science graduate student with experience in R, Python, SQL, and visualization tools. My work focuses on turning real-world data into actionable insights through modeling, dashboards, and storytelling.</p>
-    <p>Areas of interest include healthcare analytics, predictive modeling, and data visualization for decision support.</p>
-  </section>
+  <main class="container">
+    <section>
+      <h2>About Me</h2>
+      <p class="section-intro">
+        I’m <strong>Staci McDuffie</strong>, a data science and analytics professional passionate about transforming raw data into actionable insights and compelling visual stories. 
+        My work bridges technical rigor and business communication, helping teams make smarter, data-driven decisions.
+      </p>
+
+      <div class="card">
+        <h3> My Journey</h3>
+        <p>
+          My background blends analytical thinking with a creative approach to problem solving. 
+          I’ve built a portfolio of machine learning and visualization projects that address real-world challenges across retail, public safety, agriculture, and transportation. 
+          Whether it’s predicting <em>apple quality</em>, forecasting <em>store sales</em>, or uncovering trends in <em>vehicle theft data</em>, I focus on delivering results that combine statistical accuracy with visual clarity.
+        </p>
+        <p>
+          I’m currently completing advanced coursework in <strong>machine learning, big data systems, and data storytelling</strong>. 
+          My projects have spanned predictive modeling (Linear Regression, Random Forest, XGBoost), time-series forecasting, clustering, and data visualization in both <strong>Python</strong> and <strong>R</strong>.
+          Through this work, I’ve developed a strong command of tools such as <code>pandas</code>, <code>scikit-learn</code>, <code>ggplot2</code>, <code>Power BI</code>, and <code>Tableau</code>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3> My Philosophy</h3>
+        <p>
+          I believe that the best data solutions don’t just generate numbers—they tell a story.
+          My goal is to make data science accessible by presenting insights through intuitive visuals and clear narratives that resonate with technical and non-technical audiences alike.  
+          I’m especially drawn to projects that have measurable impact, such as optimizing operations, improving transparency, and helping organizations understand their customers better.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3> Skills & Technical Stack</h3>
+        <ul>
+          <li><strong>Languages:</strong> Python, R, SQL</li>
+          <li><strong>Libraries & Frameworks:</strong> pandas, scikit-learn, ggplot2, XGBoost, matplotlib, tidyverse</li>
+          <li><strong>Visualization Tools:</strong> Power BI, Tableau, R Shiny, Plotly</li>
+          <li><strong>Big Data Tools:</strong> Spark, Hadoop (HDFS, YARN), Kafka</li>
+          <li><strong>Version Control:</strong> Git & GitHub</li>
+          <li><strong>Core Competencies:</strong> Data Wrangling, Feature Engineering, Machine Learning, Forecasting, Data Storytelling</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3> Areas of Interest</h3>
+        <p>
+          I’m passionate about using data to solve problems in:
+        </p>
+        <ul>
+          <li>Retail Analytics & Sales Forecasting</li>
+          <li>Agricultural Quality Prediction</li>
+          <li>Transportation & Airline Pricing</li>
+          <li>Public Safety and Policy Visualization</li>
+          <li>Customer Behavior & Recommendation Systems</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3> Current Focus</h3>
+        <p>
+          Right now, I’m refining my machine learning pipelines for real-world scalability and expanding my portfolio of interactive dashboards. 
+          My long-term goal is to work in a role that blends <strong>data science, visualization, and business strategy</strong>—where insights can drive tangible outcomes.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Staci Holmes · Built with GitHub Pages
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
