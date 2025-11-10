@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Contact | Staci McDuffie</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Contact</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <div class="brand">STACI <span>MCDUFFIE</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Get in Touch</h2>
-    <p>Email: <a href="mailto:holmes_staci22@yahoo.com">your.email@domain.com</a></p>
-    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-  </section>
+  <main class="container">
+    <section>
+      <h2>Contact</h2>
+      <p class="section-intro">
+        I’m open to internships, entry-level data roles, and collaborations in data science and analytics.
+        Feel free to connect via any of the methods below.
+      </p>
+
+      <div class="card">
+        <p><strong> Email:</strong> <a href="holmes_staci22@yahoo.com">holmes_staci22@yahoo.com</a></p>
+        <p><strong> GitHub:</strong> <a href="https://github.com/Stacx22" target="_blank">github.com/Stacx22</a></p>
+      </div>
+
+      <div class="card">
+        <h3>What I’m Looking For</h3>
+        <ul>
+          <li> Opportunities to apply machine learning to real-world business problems</li>
+          <li> Roles emphasizing clear storytelling through data visualization</li>
+          <li> Teams working on forecasting, customer behavior, or operational analytics</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Staci Holmes · Built with GitHub Pages
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
