@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Staci McDuffie | Data Science Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <title>About | Staci McDuffie</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Staci McDuffie</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <div class="brand">STACI <span>MCDUFFIE</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="intro">
-    <h2>Welcome</h2>
-    <p>I'm a data scientist focusing on predictive modeling, visualization, and applied analytics. This portfolio highlights selected projects from my graduate work.</p>
-  </section>
+  <main class="container">
+    <section>
+      <h2>About Me</h2>
+      <p class="section-intro">
+        I’m Staci McDuffie, a data science and analytics student passionate about transforming
+        complex datasets into actionable insights. My interests include predictive modeling,
+        visualization, and real-world problem solving.
+      </p>
+      <div class="card">
+        <h3>Who I Am</h3>
+        <p>
+          I specialize in cleaning and analyzing structured and unstructured data to uncover trends
+          and build models that support decision-making. My coursework and projects cover
+          Python, R, SQL, machine learning, Spark, and Power BI.
+        </p>
+      </div>
 
-  <section id="featured-project">
-    <h2>Featured Project: Fertility Outcomes Prediction</h2>
-    <p>An R-based project using tidymodels to predict fertility outcomes from lifestyle and health variables, with emphasis on interpretability and ethics.</p>
-    <p><a href="projects.html">View all projects →</a></p>
-  </section>
+      <div class="card">
+        <h3>Skills & Tools</h3>
+        <ul>
+          <li>Python (pandas, scikit-learn, matplotlib)</li>
+          <li>R (tidyverse, ggplot2)</li>
+          <li>SQL and relational databases</li>
+          <li>Power BI / Tableau visualization</li>
+          <li>Machine Learning (Regression, Classification, Clustering)</li>
+          <li>Big Data tools (Spark, HDFS, Kafka)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Staci McDuffie · <a href="mailto:your.email@domain.com">Contact</a></p>
+    © <span id="year"></span> Staci McDuffie · Built with GitHub Pages
   </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
