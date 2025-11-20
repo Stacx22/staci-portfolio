@@ -1,57 +1,187 @@
-<section id="projects">
-  <h2>Featured Projects</h2>
-  <p>Below are selected data science and analytics projects demonstrating my skills in machine learning, data visualization, and storytelling. Each project links directly to its GitHub repository or interactive dashboard.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Staci McDuffie</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <div class="project">
-    <h3> Apple Quality Prediction</h3>
-    <p><strong>Business Problem:</strong> Help apple growers and distributors predict fruit quality to optimize pricing and reduce waste.</p>
-    <p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, XGBoost</p>
-    <p><strong>Key Methods:</strong> Regression & classification modeling, feature engineering, data cleaning</p>
-    <ul>
-      <li>Built models to predict numeric and categorical quality scores.</li>
-      <li>Compared Linear Regression, Random Forest, and XGBoost performance using RMSE and R² metrics.</li>
-      <li>Delivered actionable insights for quality control and pricing strategy.</li>
-    </ul>
-    <p><a href="https://github.com/Stacx22/apple-quality" target="_blank"> View Repository</a></p>
-  </div>
+  <section>
+    <h2>Data Science & Analytics Portfolio</h2>
+    <p>
+      Below is a selection of projects completed across my graduate coursework in data science,
+      predictive analytics, and data visualization. Each project includes a brief summary and a link
+      to the corresponding GitHub repository, where you can review code, documentation, and results.
+    </p>
+  </section>
 
-  <div class="project">
-    <h3> Flight Price Prediction</h3>
-    <p><strong>Business Problem:</strong> Predict flight ticket prices to assist travelers and airlines with demand forecasting.</p>
-    <p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, XGBoost</p>
-    <p><strong>Key Methods:</strong> Feature encoding, regression modeling, hyperparameter tuning</p>
-    <ul>
-      <li>Preprocessed flight schedule data, handling categorical variables and missing values.</li>
-      <li>Evaluated Linear Regression, Random Forest, and XGBoost; achieved MAE under 2000 INR.</li>
-      <li>Identified key predictors including departure time, duration, and airline type.</li>
-    </ul>
-    <p><a href="https://github.com/Stacx22/flight-price-prediction" target="_blank"> View Repository</a></p>
-  </div>
+  <!-- 1. Fertility Outcomes Prediction -->
+  <section class="project">
+    <h2>Fertility Outcomes Prediction</h2>
+    <p>
+      Built an R-based supervised learning pipeline using tidymodels to predict altered fertility
+      outcomes from lifestyle and health-related variables. Compared logistic regression, random
+      forest, and XGBoost models, with a focus on interpretability, model evaluation, and ethical
+      use of health data.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/fertility-outcomes-prediction" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
 
-  <div class="project">
-    <h3> Car Theft Data Story</h3>
-    <p><strong>Business Problem:</strong> Analyze theft trends across Kia and Hyundai vehicles to inform public awareness and policy response.</p>
-    <p><strong>Tech Stack:</strong> R, ggplot2, treemap, Power BI</p>
-    <p><strong>Key Methods:</strong> Data storytelling, geospatial visualization, trend analysis</p>
-    <ul>
-      <li>Created six visuals (treemap, stacked bar, area chart, pie, donut, and stacked area).</li>
-      <li>Developed an interactive dashboard for policymakers and residents.</li>
-      <li>Highlighted peak theft regions and time periods to support preventive strategies.</li>
-    </ul>
-    <p><a href="https://github.com/Stacx22/car-theft-visualization" target="_blank"> View Repository</a></p>
-  </div>
+  <!-- 2. Rossmann Store Sales Forecasting -->
+  <section class="project">
+    <h2>Rossmann Store Sales Forecasting</h2>
+    <p>
+      Forecasted daily store sales using historical transaction data, promotions, and calendar
+      features. Implemented regression-based models and tree-based ensembles in Python to support
+      staffing, inventory, and promotional planning decisions, with performance measured using RMSE
+      and MAPE.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/rossmann-store-sales-forecasting" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
 
-  <div class="project">
-    <h3> Rossmann Store Sales Forecasting</h3>
-    <p><strong>Business Problem:</strong> Predict daily sales for a retail chain to improve inventory and staffing decisions.</p>
-    <p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, XGBoost</p>
-    <p><strong>Key Methods:</strong> Time-series feature engineering, regression analysis</p>
-    <ul>
-      <li>Built predictive models capturing store, promotion, and seasonal factors.</li>
-      <li>Implemented lag features and rolling averages to improve accuracy.</li>
-      <li>Visualized predictions in Power BI for management decision support.</li>
-    </ul>
-    <p><a href="https://github.com/Stacx22/rossmann-sales" target="_blank"> View Repository</a></p>
-  </div>
-</section>
+  <!-- 3. Telecom Customer Churn Modeling -->
+  <section class="project">
+    <h2>Telecom Customer Churn Modeling</h2>
+    <p>
+      Developed a logistic regression churn model to identify high-risk telecom customers using
+      demographic, billing, and service usage features. Focused on interpretable coefficients,
+      confusion matrix analysis, and ROC AUC to support targeted retention strategies that are
+      transparent to business stakeholders.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/telecom-churn-modeling" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
 
+  <!-- 4. Apple Quality Prediction -->
+  <section class="project">
+    <h2>Apple Quality Prediction</h2>
+    <p>
+      Used the <em>apple_quality.xlsx</em> dataset to predict apple quality from physical and sensory
+      attributes such as sweetness, crunchiness, juiciness, and acidity. Implemented both regression
+      and classification models, with random forest identification of sweetness and crunchiness as
+      key drivers of perceived quality.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/apple-quality-prediction" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 5. Childcare Costs & Socioeconomic Patterns -->
+  <section class="project">
+    <h2>Childcare Costs & Socioeconomic Patterns</h2>
+    <p>
+      Analyzed the National Database of Childcare Prices to understand how childcare costs vary by
+      age group, provider type, and geography, and how these trends relate to female unemployment.
+      Delivered insights through an interactive Power BI dashboard and static R-based visuals.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/childcare-costs-visualization" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 6. White House Visitor Logs Dashboard -->
+  <section class="project">
+    <h2>White House Visitor Logs Dashboard</h2>
+    <p>
+      Created a Python-based dashboard to explore patterns in White House visitor access records,
+      focusing on timing, frequency, and location of visits. Applied thoughtful visual design and
+      ethics to support civic transparency without exposing individual-level details.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/white-house-visitor-logs-dashboard" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 7. Kia & Hyundai Theft Visualization -->
+  <section class="project">
+    <h2>Kia & Hyundai Theft Visualization</h2>
+    <p>
+      Built an R Markdown report with six visuals to communicate the rise of Kia and Hyundai thefts
+      across U.S. cities. Included pie, donut, stacked bar, treemap, area, and stacked area charts
+      tailored to municipal decision-makers and law enforcement analysts.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/kia-hyundai-thefts-visualization" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 8. Lottery Trends Across U.S. Games -->
+  <section class="project">
+    <h2>Lottery Trends Across U.S. Games</h2>
+    <p>
+      Used Power BI to analyze winning-number patterns for Mega Millions, Powerball, and Pick 10.
+      Created histograms, density plots, scatterplots, small multiples, bubble charts, and donut
+      charts to explore randomness and promote transparency in public lottery systems.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/lottery-trends-dashboard" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 9. Airline Complaint Analysis -->
+  <section class="project">
+    <h2>Airline Complaint Analysis</h2>
+    <p>
+      Examined passenger complaint data by airport, category, and subcategory using R. Produced
+      heat maps, treemaps, box plots, spatial maps, bar charts, and time series to help airline and
+      airport leaders pinpoint the most pressing service issues and prioritize improvements.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/airline-complaints-analysis" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <!-- 10. Autism Data Ethics Exploration -->
+  <section class="project">
+    <h2>Autism Data Ethics Exploration</h2>
+    <p>
+      Wrote a research-driven white paper on autism spectrum disorder, examining assumptions,
+      ethical issues in early diagnosis and intervention, and the implications of biomarker
+      research. Emphasized neurodiversity, autonomy, and inclusive research practices.
+    </p>
+    <p>
+      <a href="https://github.com/Stacx22/autism-ethics-paper" target="_blank">
+        View Repository →
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Staci McDuffie</p>
+  </footer>
+</body>
+</html>
